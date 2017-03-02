@@ -1,0 +1,23 @@
+
+/gate/world/daughters/name PhantomMother
+/gate/world/daughters/insert box
+/gate/PhantomMother/geometry/setXLength 200. mm
+/gate/PhantomMother/geometry/setYLength 200. mm
+/gate/PhantomMother/geometry/setZLength 200. mm
+/gate/PhantomMother/placement/setRotationAxis 1 0 0
+/gate/PhantomMother/placement/setRotationAngle 0. deg
+/gate/PhantomMother/placement/setTranslation 0. 0. 0. mm
+/gate/PhantomMother/setMaterial Air
+/gate/PhantomMother/vis/forceWireframe
+/gate/PhantomMother/vis/setColor white
+
+
+# Patient phantom (voxel)
+/gate/PhantomMother/daughters/name                      patient
+/gate/PhantomMother/daughters/insert                    ImageNestedParametrisedVolume
+/gate/geometry/setMaterialDatabase              data/patient-HUmaterials.db
+/gate/patient/geometry/SetHUToMaterialFile      data/patient-HU2mat.txt
+#/gate/patient/geometry/SetImage                 data/patient-2mm.mhd
+/gate/patient/geometry/SetImage                 data/Realskull.mhd
+/gate/patient/placement/setTranslation          0 0 0 mm
+

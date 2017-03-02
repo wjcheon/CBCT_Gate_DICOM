@@ -1,0 +1,39 @@
+########
+# ROOT #
+########
+#/gate/output/root/enable
+#/gate/output/root/setFileName benchmarkFastCT
+#/gate/output/root/setRootHitFlag 0
+#/gate/output/root/setRootSinglesFlag 1
+#/gate/output/root/setRootNtupleFlag 0
+#/gate/output/verbose 2
+
+#########
+# ASCII #
+#########
+/gate/output/ascii/setOutFileVoxelFlag false
+/gate/output/ascii/setOutFileHitsFlag false
+
+############
+# CT Image #
+############
+/gate/output/imageCT/enable
+/gate/output/imageCT/verbose 0
+#/gate/output/imageCT/setFileName CToptm_10e9_0.25_12.4_80keV_360_rootoff_v3
+/gate/output/imageCT/setFileName CToptm_Patient_2mm_test_10e9
+#/gate/output/imageCT/numFastPixelX 1536
+#/gate/output/imageCT/numFastPixelY 1920
+
+#/gate/output/imageCT/numFastPixelX 153
+#/gate/output/imageCT/numFastPixelY 192
+
+#sample
+/gate/output/imageCT/numFastPixelX 300
+/gate/output/imageCT/numFastPixelY 300
+
+
+
+/gate/output/imageCT/numFastPixelZ   1
+
+/gate/random/setEngineName MersenneTwister
+/gate/output/imageCT/setStartSeed 567489

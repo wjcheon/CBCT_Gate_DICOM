@@ -1,0 +1,97 @@
+############################
+# VISUALIZATION PARAMETERS #
+############################
+/control/execute visu.mac
+#/vis/disable
+
+#########################
+# SET MATERIAL DATABASE #
+#########################
+# newly defined material TEFLON
+/gate/geometry/setMaterialDatabase ./GateMaterials.db
+
+
+#########
+# WORLD #
+#########
+/gate/world/geometry/setXLength 200. cm
+/gate/world/geometry/setYLength 200. cm
+/gate/world/geometry/setZLength 200. cm
+/gate/world/setMaterial Air
+/gate/world/vis/forceWireframe
+
+
+
+###############################################
+# CT scanner for dental imaging               #
+# 1920x1536 pixels                            #
+# size of pixels : 0.127 x 0.127 x 1.0 mm3    #
+# pixels are made up of silicon               #
+###############################################
+# Ewha protopyte CBCT
+/control/execute CTScannerFast.mac
+
+
+###################################
+# phantom in rotation (1 deg/s) : #
+#  * 1 water cylinder             #
+#  * 4 balls                      #
+###################################
+#/control/execute phantom.mac
+#/gate/waterCylinder/moves/insert rotation
+#/gate/waterCylinder/rotation/setSpeed 1. deg/s
+#/gate/waterCylinder/rotation/setAxis 0 0 1
+
+
+#####################################
+# phantom in rotation (1 deg/s) :   #
+#  * PMMA, WATER, TEFLON, and AIR   #          
+#  * cylinder                       #
+#####################################
+# Ewha CT phantom
+#/control/execute phantom_cylinder.mac
+#/gate/PhantomMother/moves/insert rotation
+#/gate/PhantomMother/rotation/setSpeed 1. deg/s
+#/gate/PhantomMother/rotation/setAxis 0 0 1
+
+
+
+#DICOM 
+/control/execute patient.mac
+#/gate/PhantomMother/rotation/setSpeed 1. deg/s
+#/gate/PhantomMother/rotation/setAxis 0 0 1
+
+
+###########
+# PHYSICS #
+###########
+/control/execute physics.mac
+
+#############
+# DIGITIZER #
+#############
+/control/execute digitizer.mac
+
+##############
+# SOURCE GPS #
+##############
+#/control/execute source.mac
+#/control/execute source_100keV.mac
+/control/execute source_80keV.mac
+#/control/execute source_70keV.mac
+
+##########
+# OUTPUT #
+##########
+/control/execute outputFast.mac
+
+#############
+# VERBOSITY #
+#############
+/control/execute verbose.mac
+
+##################
+# INITIALIZATION #
+##################
+/gate/run/initialize
+

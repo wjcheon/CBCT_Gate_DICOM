@@ -1,0 +1,58 @@
+##################
+# Water Cylinder #
+##################
+
+
+/gate/world/daughters/name PhantomMother
+/gate/world/daughters/insert box
+/gate/PhantomMother/geometry/setXLength 160. mm
+/gate/PhantomMother/geometry/setYLength 160. mm
+/gate/PhantomMother/geometry/setZLength 160. mm
+/gate/PhantomMother/placement/setRotationAxis 1 0 0
+/gate/PhantomMother/placement/setRotationAngle 90. deg
+/gate/PhantomMother/placement/setTranslation 0. 0. 0. mm
+/gate/PhantomMother/setMaterial Air
+/gate/PhantomMother/vis/forceWireframe
+/gate/PhantomMother/vis/setColor white
+
+
+
+/gate/PhantomMother/daughters/name PhantomPMMA
+/gate/PhantomMother/daughters/insert cylinder
+/gate/PhantomPMMA/geometry/setRmin 30. mm
+/gate/PhantomPMMA/geometry/setRmax 60. mm
+/gate/PhantomPMMA/geometry/setHeight 150. mm
+/gate/PhantomPMMA/placement/setTranslation 0. 0. 0. mm
+/gate/PhantomPMMA/setMaterial PMMA
+/gate/PhantomPMMA/vis/forceWireframe
+/gate/PhantomPMMA/vis/setColor cyan
+
+/gate/PhantomMother/daughters/name PhantomWater
+/gate/PhantomMother/daughters/insert cylinder
+/gate/PhantomWater/geometry/setRmin 0. mm
+/gate/PhantomWater/geometry/setRmax 30. mm
+/gate/PhantomWater/geometry/setHeight 50. mm
+/gate/PhantomWater/placement/setTranslation 0. 0. 50. mm
+/gate/PhantomWater/setMaterial Water
+/gate/PhantomWater/vis/forceSolid
+/gate/PhantomWater/vis/setColor red
+
+/gate/PhantomMother/daughters/name PhantomTeflon
+/gate/PhantomMother/daughters/insert cylinder
+/gate/PhantomTeflon/geometry/setRmin 0. mm
+/gate/PhantomTeflon/geometry/setRmax 30. mm
+/gate/PhantomTeflon/geometry/setHeight 50. mm
+/gate/PhantomTeflon/placement/setTranslation 0. 0. -50. mm
+/gate/PhantomTeflon/setMaterial Teflon
+/gate/PhantomTeflon/vis/forceSolid
+/gate/PhantomTeflon/vis/setColor green
+
+/gate/PhantomMother/daughters/name PhantomAir
+/gate/PhantomMother/daughters/insert cylinder
+/gate/PhantomAir/geometry/setRmin 0. mm
+/gate/PhantomAir/geometry/setRmax 30. mm
+/gate/PhantomAir/geometry/setHeight 50. mm
+/gate/PhantomAir/placement/setTranslation 0. 0. 0. mm
+/gate/PhantomAir/setMaterial Air
+/gate/PhantomAir/vis/forceSolid
+/gate/PhantomAir/vis/setColor blue

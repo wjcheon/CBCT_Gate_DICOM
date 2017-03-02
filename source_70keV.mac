@@ -1,0 +1,83 @@
+/gate/source/addSource xraygun
+/gate/source/verbose 0
+/gate/source/xraygun/setActivity 100000000. becquerel
+/gate/source/xraygun/gps/verbose 0
+/gate/source/xraygun/gps/particle gamma
+/gate/source/xraygun/gps/energytype Arb
+/gate/source/xraygun/gps/histname arb
+/gate/source/xraygun/gps/emin 0.00 keV
+/gate/source/xraygun/gps/emax 70.00 keV
+/gate/source/xraygun/gps/histpoint 0.007   0
+/gate/source/xraygun/gps/histpoint 0.008   6
+/gate/source/xraygun/gps/histpoint 0.009 479
+/gate/source/xraygun/gps/histpoint 0.010 8261
+/gate/source/xraygun/gps/histpoint 0.011 29041
+/gate/source/xraygun/gps/histpoint 0.012 89961
+/gate/source/xraygun/gps/histpoint 0.013 217566
+/gate/source/xraygun/gps/histpoint 0.014 457701
+/gate/source/xraygun/gps/histpoint 0.015 798965
+/gate/source/xraygun/gps/histpoint 0.016 1232483
+/gate/source/xraygun/gps/histpoint 0.017 1710679
+/gate/source/xraygun/gps/histpoint 0.018 2193827
+/gate/source/xraygun/gps/histpoint 0.019 2663917
+/gate/source/xraygun/gps/histpoint 0.020 3092584
+/gate/source/xraygun/gps/histpoint 0.021 3464175
+/gate/source/xraygun/gps/histpoint 0.022 3774351
+/gate/source/xraygun/gps/histpoint 0.023 4019706
+/gate/source/xraygun/gps/histpoint 0.024 4203933
+/gate/source/xraygun/gps/histpoint 0.025 4317402
+/gate/source/xraygun/gps/histpoint 0.026 4400129
+/gate/source/xraygun/gps/histpoint 0.027 4435812
+/gate/source/xraygun/gps/histpoint 0.028 4434712
+/gate/source/xraygun/gps/histpoint 0.029 4404529
+/gate/source/xraygun/gps/histpoint 0.030 4343998
+/gate/source/xraygun/gps/histpoint 0.031 4268883
+/gate/source/xraygun/gps/histpoint 0.032 4175703
+/gate/source/xraygun/gps/histpoint 0.033 4074112
+/gate/source/xraygun/gps/histpoint 0.034 3963029
+/gate/source/xraygun/gps/histpoint 0.035 3841606
+/gate/source/xraygun/gps/histpoint 0.036 3715035
+/gate/source/xraygun/gps/histpoint 0.037 3588397
+/gate/source/xraygun/gps/histpoint 0.038 3459541
+/gate/source/xraygun/gps/histpoint 0.039 3326553
+/gate/source/xraygun/gps/histpoint 0.040 3197134
+/gate/source/xraygun/gps/histpoint 0.041 3068346
+/gate/source/xraygun/gps/histpoint 0.042 2940651
+/gate/source/xraygun/gps/histpoint 0.043 2813351
+/gate/source/xraygun/gps/histpoint 0.044 2689576
+/gate/source/xraygun/gps/histpoint 0.045 2567951
+/gate/source/xraygun/gps/histpoint 0.046 2447447
+/gate/source/xraygun/gps/histpoint 0.047 2331077
+/gate/source/xraygun/gps/histpoint 0.048 2216778
+/gate/source/xraygun/gps/histpoint 0.049 2106496
+/gate/source/xraygun/gps/histpoint 0.050 1996362
+/gate/source/xraygun/gps/histpoint 0.051 1889701
+/gate/source/xraygun/gps/histpoint 0.052 1786017
+/gate/source/xraygun/gps/histpoint 0.053 1683469
+/gate/source/xraygun/gps/histpoint 0.054 1584720
+/gate/source/xraygun/gps/histpoint 0.055 1487902
+/gate/source/xraygun/gps/histpoint 0.056 1392131
+/gate/source/xraygun/gps/histpoint 0.057 1299141
+/gate/source/xraygun/gps/histpoint 0.058 1207762
+/gate/source/xraygun/gps/histpoint 0.059 1118069
+/gate/source/xraygun/gps/histpoint 0.060 1028102
+/gate/source/xraygun/gps/histpoint 0.061 940283
+/gate/source/xraygun/gps/histpoint 0.062 853319
+/gate/source/xraygun/gps/histpoint 0.063 766147
+/gate/source/xraygun/gps/histpoint 0.064 679052
+/gate/source/xraygun/gps/histpoint 0.065 591228
+/gate/source/xraygun/gps/histpoint 0.066 502707
+/gate/source/xraygun/gps/histpoint 0.067 405900
+/gate/source/xraygun/gps/histpoint 0.068 313389
+/gate/source/xraygun/gps/histpoint 0.069 183872
+/gate/source/xraygun/gps/histpoint 0.070   0
+/gate/source/xraygun/gps/arbint Lin
+/gate/source/xraygun/gps/type Plane
+/gate/source/xraygun/gps/shape Rectangle
+/gate/source/xraygun/gps/halfx 0.25 mm
+/gate/source/xraygun/gps/halfy 0.25 mm
+/gate/source/xraygun/gps/mintheta 0.00 deg
+/gate/source/xraygun/gps/maxtheta 12.40 deg
+/gate/source/xraygun/gps/centre  0.00 0.00 -643.00 mm
+/gate/source/xraygun/gps/angtype iso
+/gate/source/list
